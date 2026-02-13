@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quattrocento:wght@400;700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Krishien</title>
+</head>
+<body class="bg-[#0F0F0F] scroll-smooth">
+    <nav class="px-5 py-3 border-b-2 border-[#B11226] sticky top-0 w-full z-50 bg-[#0F0F0F]">
+        <div class="max-w-10xl mx-auto py-2 px-5 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <h1 style="font-family: Playfair Display, serif; font-style: italic;" class="text-3xl md:text-4xl text-white uppercase font-bold tracking-wide">krishien</h1>
+                <i class="fa-solid fa-heart text-[#B11226] text-3xl md:text-4xl relative top-1"></i>
+            </div>
+            <ul class="hidden lg:flex items-center gap-7">
+                <li style="font-family: Montserrat; font-style: italic;" class="text-xl text-white tracking-wide capitalize transition duration-300 hover:text-[#B11226]"><a href="#home">home</a></li>
+                <li style="font-family: Montserrat; font-style: italic;" class="text-xl text-white tracking-wide capitalize transition duration-300 hover:text-[#B11226]"><a href="#our-story">our story</a></li>
+                <li style="font-family: Montserrat; font-style: italic;" class="text-xl text-white tracking-wide capitalize transition duration-300 hover:text-[#B11226]"><a href="#sweetest-moments">sweetest moments</a></li>
+                <li style="font-family: Montserrat; font-style: italic;" class="text-xl text-white tracking-wide capitalize transition duration-300 hover:text-[#B11226]"><a href="#love-letter">love letter</a></li>
+            </ul>
+
+            <div class="lg:hidden text-white text-3xl cursor-pointer">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div id="mobileMenu" class="fixed top-0 right-0 w-64 h-full bg-[#0F0F0F] shadow-lg transform translate-x-full transition-transform duration-300 z-50 lg:hidden">
+            <div class="flex justify-end p-5">
+                <i id="closeMenu" class="fa-solid fa-xmark text-white text-3xl cursor-pointer"></i>
+            </div>
+            <hr class="border-b-2 mt-[11.4px]">
+            <ul class="flex flex-col gap-6 p-5 mt-5">
+                <li style="font-family: Montserrat; font-style: italic;" class="text-xl text-white tracking-wide capitalize transition duration-300 hover:text-[#B11226]"><a href="#home">home</a></li>
+                <li style="font-family: Montserrat; font-style: italic;" class="text-xl text-white tracking-wide capitalize transition duration-300 hover:text-[#B11226]"><a href="#our-story">our story</a></li>
+                <li style="font-family: Montserrat; font-style: italic;" class="text-xl text-white tracking-wide capitalize transition duration-300 hover:text-[#B11226]"><a href="#sweetest-moments">sweetest moments</a></li>
+                <li style="font-family: Montserrat; font-style: italic;" class="text-xl text-white tracking-wide capitalize transition duration-300 hover:text-[#B11226]"><a href="#love-letter">love letter</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <section id="home" class="p-16 w-full">
+        <div class="flex flex-col-reverse lg:flex-row items-center justify-between w-full gap-10">
+            <div class="text-center lg:text-left flex flex-col gap-4">
+                <h1 style="font-family: Playfair Display, serif; font-style: italic;" class="text-3xl md:text-6xl text-white font-semibold capitalize">
+                    happy valentine's day
+                </h1>
+                <span style="font-family: Playfair Display, serif; font-style: italic;" class="text-white text-3xl md:text-6xl font-semibold capitalize">
+                    babi <i class="fa-solid fa-heart text-[#B11226] text-3xl md:text-6xl lg:mx-0"></i>
+                </span>
+                <h3 style="font-family: Montserrat, serif; font-style: italic;" class="text-[#F4B6C2] text-sm md:text-lg mt-1">
+                    Every day with you is my favorite love story.
+                </h3>
+            </div>
+
+            <div class="w-full lg:w-[30%]  md:w-[50%] justify-center">
+                <div class="w-full">
+                    <div class="grid grid-cols-4 gap-4">
+                        <div class="col-span-2 row-span-2"><img src="images/hero1.png" class="w-full h-full object-cover"></div>
+                        <div class="col-span-1"><img src="images/hero2.JPEG" class="w-full h-full object-cover"></div>
+                        <div class="col-span-1"><img src="images/hero3.jpg" class="w-full h-full object-cover"></div>
+                        <div class="col-span-2"><img src="images/hero4.JPEG" class="w-full h-full object-cover"></div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <section data-aos="fade-up" id="our-story" class="p-16 w-full">
+        <div class="max-w-[700px] mx-auto flex flex-col gap-10">
+            <h1 style="font-family: 'Playfair Display', serif; font-style: italic;" class="text-white text-5xl text-center font-bold tracking-wide capitalize">Our Story</h1>
+
+            <div class="flex justify-center">
+            <i class="fa-solid fa-heart text-[#B11226] text-2xl"></i>
+            </div>
+
+            <div style="font-family: 'Playfair Display', serif;" class="text-[#FAFAFA] text-base md:text-lg leading-[1.8] text-left space-y-6">
+            <p>
+                On June 10, 2024, Krisha sent me a message. Her first move was funny she sent a emoji of a goat.
+                She later told me it was a test. If I replied fast, it meant I didn’t have a girlfriend.
+                I replied, but honestly, I wasn’t interested in love at that time.
+            </p>
+
+            <p>
+                Still, she stayed consistent. She loved talking to me, and she never got tired of sending messages.
+                One day, she made a joke that hurt me. We weren’t that close yet, so I stopped talking to her for a few days.
+                Then she messaged me again and said sorry.
+                She even said she couldn’t sleep well because of what happened.
+            </p>
+
+            <p>
+                I forgave her. She was so happy because she could talk again to her “future husband.”
+                By July 1, 2024, we were already talking every day.
+                I called her “Babi” because names like baby, babe, and love felt too common.
+                I wanted something rare just like her.
+            </p>
+
+            <p>
+                She was the first one to say “I love you.”
+                She even courted me when she got attached.
+                What started as a happy crush slowly became something real.
+                On August 20, 2024, we became official and we are still counting.
+            </p>
+
+            <p>
+                She is my first real love.
+                With her, I experienced true commitment and all my first times.
+                At the start, I wasn’t perfect.
+                I didn’t know how to love properly.
+                I protected my ego more than her.
+            </p>
+
+            <p>
+                But I changed.
+                She changed me.
+                Because no relationship grows if no one is willing to change.
+                I trusted her, and she proved me right.
+                She let go of her bad habits, and she became better for herself and for us.
+            </p>
+
+            <p>
+                We still have fights.
+                There are times when we don’t understand each other.
+                But I learned how to humble myself.
+                I learned how to listen and how to validate her feelings.
+            </p>
+
+            <p>
+                Now, I see her as my wife.
+                I see her as the mother of my future children.
+                This is our story
+                from almost becoming a toxic relationship
+                to a healthy love built on growth and choice.
+            </p>
+            </div>
+        </div>
+    </section>
+
+    <section data-aos="fade-up" id="sweetest-moments" class="p-16 w-full">
+        <div class="max-w-6xl mx-auto flex flex-col gap-12">
+            <h1 style="font-family: 'Playfair Display', serif; font-style: italic;" class="text-white text-5xl text-center font-bold tracking-wide capitalize">Sweetest Moments</h1>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="relative group overflow-hidden rounded-lg">
+                    <img src="images/date1.jpg" class="w-full h-64 sm:h-72 lg:h-full object-cover" />
+                    <div class="hidden lg:flex absolute inset-0 bg-black/60 items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                    <p class="text-white text-center px-4">
+                        <span class="block font-semibold text-lg">First Intramuros Date</span>
+                        <span class="text-sm">Our First Public Date</span>
+                    </p>
+                    </div>
+
+                    <div class="lg:hidden bg-[#1A1A1A] p-4">
+                    <p class="text-white text-center">
+                        <span class="block font-semibold">First Intramuros Date</span>
+                        <span class="text-sm text-[#F4B6C2]">First Intramuros Date</span>
+                    </p>
+                    </div>
+                </div>
+
+                <div class="relative group overflow-hidden rounded-lg">
+                    <img src="images/date2.jpg" class="w-full h-64 sm:h-72 lg:h-full object-fill" />
+
+                    <div class="hidden lg:flex absolute inset-0 bg-black/60 items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                    <p class="text-white text-center px-4">
+                        <span class="block font-semibold text-lg">My Future Wife</span>
+                        <span class="text-sm">Your Beauty is my <span class="font-bold uppercase">Favorite</span></span>
+                    </p>
+                    </div>
+
+                    <div class="lg:hidden bg-[#1A1A1A] p-4">
+                    <p class="text-white text-center">
+                        <span class="block font-semibold">My Future Wife</span>
+                        <span class="text-sm text-[#F4B6C2]">Your Beauty is my <span class="font-bold uppercase">Favorite</span></span>
+                    </p>
+                    </div>
+                </div>
+
+                <div class="relative group overflow-hidden rounded-lg">
+                    <img src="images/hero3.jpg" class="w-full h-64 sm:h-72 lg:h-full object-cover"/>
+
+                    <div class="hidden lg:flex absolute inset-0 bg-black/60 items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                    <p class="text-white text-center px-4">
+                        <span class="block font-semibold text-lg">Our Second Public Date</span>
+                        <span class="text-sm">Our Last Date before 2026</span>
+                    </p>
+                    </div>
+
+                    <div class="lg:hidden bg-[#1A1A1A] p-4">
+                    <p class="text-white text-center">
+                        <span class="block font-semibold">Our Second Public Date</span>
+                        <span class="text-sm text-[#F4B6C2]">Our Last Date before 2026</span>
+                    </p>
+                    </div>
+                </div>
+
+                <div class="relative group overflow-hidden rounded-lg">
+                    <img src="images/date4.JPEG" class="w-full h-64 sm:h-72 lg:h-full object-cover" />
+
+                    <div class="hidden lg:flex absolute inset-0 bg-black/60 items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                    <p class="text-white text-center px-4">
+                        <span class="block font-semibold text-lg">Malambing yarn</span>
+                        <span class="text-sm">Being with you makes my world feel complete</span>
+                    </p>
+                    </div>
+
+                    <div class="lg:hidden bg-[#1A1A1A] p-4">
+                    <p class="text-white text-center">
+                        <span class="block font-semibold">Malambing yarn</span>
+                        <span class="text-sm text-[#F4B6C2]">Being with you makes my world feel complete</span>
+                    </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="relative group overflow-hidden rounded-lg">
+                    <img src="images/pic1.JPEG" class="w-full h-64 sm:h-72 lg:h-full object-cover" />
+                    <div class="hidden lg:flex absolute inset-0 bg-black/60 items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                    <p class="text-white text-center px-4">
+                        <span class="block font-semibold text-lg">Lambingan malala</span>
+                        <span class="text-sm">So sad, uuwi na ako HAHAHA</span>
+                    </p>
+                    </div>
+
+                    <div class="lg:hidden bg-[#1A1A1A] p-4">
+                    <p class="text-white text-center">
+                        <span class="block font-semibold">Lambingan malala</span>
+                        <span class="text-sm text-[#F4B6C2]">So sad, uuwi na ako HAHAHA</span>
+                    </p>
+                    </div>
+                </div>
+
+                <div class="relative group overflow-hidden rounded-lg">
+                    <img src="images/pic2.JPEG" class="w-full h-64 sm:h-72 lg:h-full object-fill" />
+
+                    <div class="hidden lg:flex absolute inset-0 bg-black/60 items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                    <p class="text-white text-center px-4">
+                        <span class="block font-semibold text-lg">Dila dila yung isa, yung isa kiss</span>
+                        <span class="text-sm">Last picture bago ako umuwi HAHAHA</span>
+                    </p>
+                    </div>
+
+                    <div class="lg:hidden bg-[#1A1A1A] p-4">
+                    <p class="text-white text-center">
+                        <span class="block font-semibold">Dila dila yung isa, yung isa kiss</span>
+                        <span class="text-sm text-[#F4B6C2]">Last picture bago ako umuwi HAHAHA</span>
+                    </p>
+                    </div>
+                </div>
+
+                <div class="relative group overflow-hidden rounded-lg">
+                    <img src="images/pic3.JPEG" class="w-full h-64 sm:h-72 lg:h-full object-cover"/>
+
+                    <div class="hidden lg:flex absolute inset-0 bg-black/60 items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                    <p class="text-white text-center px-4">
+                        <span class="block font-semibold text-lg">Picture picture muna kasi mamaya nakacall nanaman</span>
+                        <span class="text-sm">Sad si lalake oh, back to normal nanaman kasi</span>
+                    </p>
+                    </div>
+
+                    <div class="lg:hidden bg-[#1A1A1A] p-4">
+                    <p class="text-white text-center">
+                        <span class="block font-semibold">Picture picture muna kasi mamaya nakacall nanaman</span>
+                        <span class="text-sm text-[#F4B6C2]">Sad si lalake oh, back to normal nanaman kasi</span>
+                    </p>
+                    </div>
+                </div>
+
+                <div class="relative group overflow-hidden rounded-lg">
+                    <img src="images/pic4.JPEG" class="w-full h-64 sm:h-72 lg:h-full object-cover" />
+
+                    <div class="hidden lg:flex absolute inset-0 bg-black/60 items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                    <p class="text-white text-center px-4">
+                        <span class="block font-semibold text-lg">Sweet Moments talaga toh</span>
+                        <span class="text-sm">Kasama nya lalake nya</span>
+                    </p>
+                    </div>
+
+                    <div class="lg:hidden bg-[#1A1A1A] p-4">
+                    <p class="text-white text-center">
+                        <span class="block font-semibold">Sweet moments talaga toh</span>
+                        <span class="text-sm text-[#F4B6C2]">Kasama nya lalake nya</span>
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section data-aos="fade-up" id="love-letter" class="py-20 px-4 w-full bg-[#0E0E0E]">
+        <div class="max-w-[760px] mx-auto">
+            <div class="bg-[#FAF7F2] rounded-xl shadow-2xl px-6 sm:px-10 md:px-14 py-12">
+                <h1 style="font-family: 'Playfair Display', serif; font-style: italic;" class="text-[#7A1E2D] text-4xl md:text-5xl text-center font-semibold tracking-wide capitalize">Valentine’s Letter</h1>
+
+                <div class="flex justify-center my-6">
+                    <i class="fa-solid fa-heart text-[#B11226] text-xl"></i>
+                </div>
+                
+                <div style="font-family: 'Playfair Display', serif;" class="text-[#2A2A2A] text-base md:text-lg leading-[1.9] space-y-6 text-left">
+                    <p>
+                        Happy valentine's day Babi/Mom ko, Thank you kasi kahit mahirap ang sitwasyon natin, mas pinili mo parin na magstay saken, sobrang naappreciate ko yung mga ginagawa mo 
+                        sa relationship nating dalawa, sorry po kasi wala akong flowers na maibigay at tag hirap pa po, pero babawi po ako once na magkamoney na ako, 
+                        sana magtagal pa tyo at stay strong sa atin, my world is not complete without you, mahal na mahal kita palagi babi mom ko.
+                    </p>
+
+                    <p>
+                        Thank you din kasi lahat ng pinagbabawal ko sayo is sinusunod mo, same as me, I'll respect lahat ng pinagbabawal mo sakin kasi mahal kita at truly committed ako 
+                        sa relationship natin.
+                    </p>
+
+                    <p>
+                        Thank you sa lahat babi ko hinding hindi ko makakalimutan lahat ng mga efforts na ginagawa mo sa relationship natin, 
+                        hayaan mong ako naman ang bumawi sa lahat ng pagod mo.
+                    </p>
+
+                    <p>
+                        Mas pipiliin kong unawain ka at intindihin ka dahil never akong susuko sayo, your Toyo side, dragon side, 
+                        dahil sa mga yan, lalo lng ako naiinlove sayo kahit minsan nakakapagod na pero never ko inisip na sukuan ka or pabayaan ka.
+                    </p>
+
+                    <p>
+                        Andito lng ako palagi para sayo, sa lahat ng paghihirap mo at sa lahat ng pinagdadaanan mo, remember na kakampi tyo sa lahat ng bahay.
+                    </p>
+
+                    <p>
+                        Yun lng, Happy Valentine's day babi koo mahal na mahal kita palagi, mwaaa 🤍
+                    </p>
+
+                    <p class="mt-10 text-right italic">
+                    Always yours,<br />
+                    <span class="font-semibold">Babi/Dad Jadrien</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="w-full border-t-2 border-[#B11226]">
+        <footer class="max-w-6xl mx-auto px-5 py-10 flex flex-col lg:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-2">
+                <h1 style="font-family: 'Playfair Display', serif; font-style: italic;" class="text-3xl md:text-4xl text-white uppercase font-bold tracking-wide">krishien</h1>
+                <i class="fa-solid fa-heart text-[#B11226] text-3xl md:text-4xl relative top-1"></i>
+                </div>
+
+                <div class="text-center lg:text-left max-w-xl">
+                    <p style="font-family: 'Playfair Display', serif; font-style: italic;" class="text-sm md:text-base text-[#FAFAFA] leading-relaxed">“Let me fly you to the moon. My eyes have always followed you around the room, ’cause you’re the only God that I will ever need.”</p>
+                </div>    
+            </div>
+        </footer>
+    </div>
+
+    <script>
+    AOS.init({
+        duration: 1000,
+        easing: 'ease-out-cubic',
+        once: true
+    });
+    </script>
+
+</body>
+<script src="script.js"></script>
+</html>
